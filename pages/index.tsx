@@ -1,10 +1,6 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
 import CardView from "../components/cardView";
 import { useEffect, useState } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
-import { json } from "stream/consumers";
 
 export default function Home() {
 	const [data, setData] = useState<any>([]);
