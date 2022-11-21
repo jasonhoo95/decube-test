@@ -1,4 +1,4 @@
-export default function CardView({ data }: any) {
+export default function CardView({ data, index }: any) {
 	return (
 		<div className="box-shadow mx-3 relative h-full">
 			<div className="absolute flex top-[10px] right-[10px]">
@@ -27,7 +27,9 @@ export default function CardView({ data }: any) {
 			<div
 				style={{ maxHeight: "300px", overflowY: "auto" }}
 				className="p-8">
-				<div className="font-bold">{data.title}</div>
+				<div className="font-bold">
+					{index + 1}. {data.title}
+				</div>
 				<div className="flex mt-3">
 					<span className="font-bold">Release Date:</span>{" "}
 					<div className="ml-3 text-gray-400">({data.release_date})</div>

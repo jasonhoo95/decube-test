@@ -40,7 +40,10 @@ export default function Home() {
 						<div
 							className="h-full py-5"
 							key={index}>
-							<CardView data={i} />
+							<CardView
+								index={index}
+								data={i}
+							/>
 						</div>
 					))}
 				</div>
